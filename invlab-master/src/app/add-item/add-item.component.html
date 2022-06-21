@@ -1,0 +1,50 @@
+<div>
+<fieldset>
+  <legend><B> ADD ITEMS </B></legend>
+  <form>
+    <div>
+      <label style="margin:8px;font-size:15px;" > ITEM CODE </label>
+      <input style="margin:17px; padding:10px;" type="text" name="itmCode" placeholder="ITEM CODE" [(ngModel)] ="itm.itemCode"required >
+    </div>
+
+    <div>
+      <label style="margin:8px;font-size:15px;" > ITEM PRICE </label>
+      <input style="margin:17px; padding:10px;" type="text" name="itmPrice" placeholder="ITEM PRICE" [(ngModel)] ="itm.price"required >
+    </div>
+
+    <div>
+      <label style="margin:8px;font-size:15px;" > CATEGEORY </label>
+      <select style="margin:17px; padding:10px;" type="text" type="text" name="itmCat" placeholder="CATEGORY" [(ngModel)] = "itm.itemCat" >
+        <option value="Gifts " selected> Gifts </option>
+        <option value="Flowers"> Flowers </option>
+        <option value="Cakes"> Cakes </option>
+      </select>
+    </div>
+    
+    <div>
+      <label style="margin:8px;font-size:15px;" > DESCRIPTION </label> 
+      <textarea  rows="5" cols="35"style="margin:8px;" type="text" type="text" name="itmdes" placeholder="DES" [(ngModel)] ="itm.des" ></textarea>
+    </div>
+    <br>
+    <div>
+      <label style="margin:10px;font-size:15px;" > ADD IMAGE </label>
+      <input type="file" (change)="onFileChange($event)">
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><button style="margin:8px;padding:8px;" mat-flat-button color="primary" (click)="onSubmit()"> Add </button></td>
+          <td><button style="margin:8px;padding:8px;" mat-flat-button color="warn" (click)="onCancel()"> Cancel </button></td>
+        </tr>
+      </table>
+    </div>
+
+
+
+    <img width="20px" height="20px" [src]="itnUrl">
+
+  </form>
+  </fieldset>
+</div>
+
+

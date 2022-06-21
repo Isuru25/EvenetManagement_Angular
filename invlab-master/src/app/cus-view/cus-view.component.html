@@ -1,0 +1,41 @@
+<div>
+  <div style="background-color: rgba(218, 202, 179, 0.849);">
+    <div style="background-color: rgba(169, 169, 169, 0.87);">
+      <h2 style="padding: 16px;font-size:28px;"> Inventory</h2>
+    </div>
+    
+    <div class = "search">
+      <select style="font-size:16px;border-style: solid;border-radius: 5px;border-color: dimgrey;width: 95px;" (change)="onChange($event.target.value)">
+        <option value="Gifts " > Gifts </option>
+        <option value="Flowers"> Flowers </option>
+        <option value="Cakes"> Cakes </option>
+      </select>
+    </div>
+  
+    <mat-card style="padding:14px;max-width:60%;border-color: rgb(78, 96, 112);border-style:solid;
+  border-width:6px;border-radius:4px;margin-top:3%;margin-left:18%;background-color: rgba(83, 84, 95, 0.87);font-size: medium;"  *ngFor='let item of itemList'>
+      <table>
+        <tr>
+          <td rowspan="4">
+            <img style="width:300px;height:250px;" src="../../assets/{{ item.path }}" /> 
+          </td>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">ITEM CODE</label></td>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">{{ item.itemCode }}</label></td>
+        </tr>
+        <tr>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">ITEM CATEGORY</label></td>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">{{ item.itemCat }}</label></td>
+        </tr>
+        <tr>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">ITEM PRICE</label></td>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">{{ item.itemprice }}</label></td>
+        </tr>
+        <tr>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">ITEM DESCRIPTION</label></td>
+          <td style="margin:8px;padding:8px;"><label style="margin:16px;padding:16px">{{ item.des }}</label></td>
+        </tr>
+  
+      </table>
+    </mat-card>
+  </div>
+  </div>

@@ -1,0 +1,76 @@
+.container{
+    background-image:url(../../assets/xew.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+      
+}
+.mt-3{
+    
+    text-align: center;
+    font-size:16px;
+    font-weight: bold;
+    position: relative;
+    border-radius:10px;
+    padding:1px 35px;
+    color:#2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #255784;
+    border-radius:10px;
+      
+}
+
+.mt-3:hover{
+    color: #d0d5da;
+    background: #4c61a7de;
+    box-shadow: 0 0 05px #2196f3,  0 0 15px #2196f3 ,  0 0 30px #2196f3;
+
+}
+
+.mt-4{
+    
+    
+    text-align: center;
+    font-size:16px;
+    font-weight: bold;
+    position: relative;
+    padding: 1px 50px;
+    color:#2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #9b1818da;
+    border-radius:10px;
+
+}
+
+.mt-4:hover{
+    color:#d0d5da;
+    background: #ad3d3dde;
+    box-shadow: 0 0 05px #b40413fb,  0 0 15px #b40413fb, 0 0 30px #b40413fb;
+}
+
+.w3-bar{
+    margin-left:75%;
+}
+.mt-2{
+
+    border-radius:6px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    position:relative; 
+    padding-top:2px;   
+    padding-left: 16px;
+    font-size:17px;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-width:2px;
+    border-color: rgb(138, 138, 133);
+    
+
+}
